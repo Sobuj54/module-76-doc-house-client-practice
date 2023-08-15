@@ -10,7 +10,6 @@ const Services = () => {
     fetch("services.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setServices(data);
       });
   }, []);
@@ -56,14 +55,15 @@ const Services = () => {
               Oral Surgery
             </Tab>
           </TabList>
+
           <TabPanel>
-            {/* <ServiceDetails service={cavity}></ServiceDetails> */}
+            {cavity && <ServiceDetails service={cavity}></ServiceDetails>}
           </TabPanel>
           <TabPanel>
-            {/* <ServiceDetails service={cosmetic}></ServiceDetails> */}
+            {cosmetic && <ServiceDetails service={cosmetic}></ServiceDetails>}
           </TabPanel>
           <TabPanel>
-            {/* <ServiceDetails service={surgery}></ServiceDetails> */}
+            {surgery && <ServiceDetails service={surgery}></ServiceDetails>}
           </TabPanel>
         </Tabs>
       </div>
