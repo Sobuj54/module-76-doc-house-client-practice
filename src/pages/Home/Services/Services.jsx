@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-import ServiceDetails from "./ServiceDetails";
+import ServiceDetails from "./serviceDetailas/ServiceDetails";
 
 const Services = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -10,18 +10,19 @@ const Services = () => {
     fetch("services.json")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setServices(data);
       });
   }, []);
 
-  const cavity = services.find(
+  let cavity = services.find(
     (service) => service.title === "Cavity Protection"
   );
 
-  const cosmetic = services.find(
+  let cosmetic = services.find(
     (service) => service.title === "Cosmetic Dentistry"
   );
-  const surgery = services.find((service) => service.title === "Oral Surgery");
+  let surgery = services.find((service) => service.title === "Oral Surgery");
 
   return (
     <div className="grid lg:grid-cols-2 gap-5 mt-20 px-5 lg:px-10">
@@ -56,13 +57,13 @@ const Services = () => {
             </Tab>
           </TabList>
           <TabPanel>
-            <ServiceDetails service={cavity}></ServiceDetails>
+            {/* <ServiceDetails service={cavity}></ServiceDetails> */}
           </TabPanel>
           <TabPanel>
-            <ServiceDetails service={cosmetic}></ServiceDetails>
+            {/* <ServiceDetails service={cosmetic}></ServiceDetails> */}
           </TabPanel>
           <TabPanel>
-            <ServiceDetails service={surgery}></ServiceDetails>
+            {/* <ServiceDetails service={surgery}></ServiceDetails> */}
           </TabPanel>
         </Tabs>
       </div>
