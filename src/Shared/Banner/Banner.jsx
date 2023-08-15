@@ -25,7 +25,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="relative mt-10 lg:mt-0">
+        <div className="relative my-10 lg:mt-0">
           <div className="w-[150px] lg:w-[300px] absolute top-1/2 right-24 border-8  border-white hover:rotate-12 transition-transform delay-150">
             <img
               src="https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg"

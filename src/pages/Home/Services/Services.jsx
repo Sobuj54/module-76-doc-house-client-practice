@@ -1,10 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import ServiceDetails from "./ServiceDetails";
 
 const Services = () => {
   const [tabIndex, setTabIndex] = useState(0);
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch("services.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setServices(data);
+      });
+  }, []);
+
+  const cavity = services.find(
+    (service) => service.title === "Cavity Protection"
+  );
+
+  const cosmetic = services.find(
+    (service) => service.title === "Cosmetic Dentistry"
+  );
+  const surgery = services.find((service) => service.title === "Oral Surgery");
+
   return (
-    <div className="grid lg:grid-cols-2 mt-20 px-10">
+    <div className="grid lg:grid-cols-2 gap-5 mt-20 px-5 lg:px-10">
       <div>
         <img
           src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg?size=626&ext=jpg"
@@ -12,7 +32,7 @@ const Services = () => {
         />
       </div>
       <div>
-        <h2 className="text-2xl font-bold mb-2">Our Services</h2>
+        <h2 className="text-4xl font-bold mb-3">Our Services</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -35,9 +55,15 @@ const Services = () => {
               Oral Surgery
             </Tab>
           </TabList>
-          <TabPanel>adfsaf</TabPanel>
-          <TabPanel>sofj</TabPanel>
-          <TabPanel>third</TabPanel>
+          <TabPanel>
+            <ServiceDetails service={cavity}></ServiceDetails>
+          </TabPanel>
+          <TabPanel>
+            <ServiceDetails service={cosmetic}></ServiceDetails>
+          </TabPanel>
+          <TabPanel>
+            <ServiceDetails service={surgery}></ServiceDetails>
+          </TabPanel>
         </Tabs>
       </div>
     </div>
