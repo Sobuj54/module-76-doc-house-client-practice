@@ -28,8 +28,11 @@ const Slider = () => {
 
   return (
     <div ref={sliderRef} className="keen-slider mt-10">
-      {reviews.map((review) => (
-        <SliderDetails key={review.id} review={review}></SliderDetails>
+      {reviews.map((review, index) => (
+        <SliderDetails
+          key={review.id}
+          review={review}
+          index={index}></SliderDetails>
       ))}
 
       {/* <div className="keen-slider__slide number-slide2">2</div>

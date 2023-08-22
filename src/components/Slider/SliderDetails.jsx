@@ -1,9 +1,12 @@
 import comma from "../../assets/logo/icons8-quote-left-96.png";
 
-const SliderDetails = ({ review }) => {
+const SliderDetails = ({ review, index }) => {
   const { picture, name, profession, comment } = review;
   return (
-    <div className="keen-slider__slide border-2 rounded-md p-3">
+    <div
+      className={`keen-slider__slide number-slide${
+        index + 1
+      } border-2 rounded-md p-3`}>
       <div className="flex  items-center">
         <img className="w-16 mask mask-circle" src={picture}></img>
         <div className="ml-2">
