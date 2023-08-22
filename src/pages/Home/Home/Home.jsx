@@ -1,4 +1,5 @@
 import Banner from "../../../Shared/Banner/Banner";
+import ContactUs from "../ContactUs/ContactUs";
 import ExpertDocs from "../ExpertDocs/ExpertDocs";
 import Info from "../Info/Info";
 import Reviews from "../Reviews/Reviews";
@@ -12,6 +13,7 @@ const Home = () => {
       <Info></Info>
       <Reviews></Reviews>
       <ExpertDocs></ExpertDocs>
+      <ContactUs></ContactUs>
     </>
   );
 };

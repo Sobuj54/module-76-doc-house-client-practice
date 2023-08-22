@@ -60,7 +60,7 @@ const ExpertDocs = () => {
                 alt=""
               />
             </a>
-            <h4 className="text-xl font-semibold mt-3 px-2">Karyen Anderson</h4>
+            <h4 className="text-xl font-semibold mt-3 px-2">Emma Watson</h4>
             <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-4">
               BTP - Senior Physiotherapist
             </span>
@@ -90,7 +90,7 @@ const ExpertDocs = () => {
                 alt=""
               />
             </a>
-            <h4 className="text-xl font-semibold mt-3 px-2">Karyen Anderson</h4>
+            <h4 className="text-xl font-semibold mt-3 px-2">Anne Hathaway</h4>
             <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-teal-500 bg-teal-100 mt-4">
               BTP - Senior Physiotherapist
             </span>
