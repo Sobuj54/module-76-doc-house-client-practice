@@ -9,13 +9,13 @@ const SignUp = () => {
       </div>
       <div className="absolute inset-0 "></div>
 
-      <div
-        className="relative max-w-lg px-4 mx-auto sm:px-0 rounded-md"
-        style={{
-          background:
-            "linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe)",
-        }}>
-        <div className="overflow-hidden  rounded-md shadow-2xl shadow-black ">
+      <div className="relative max-w-lg px-4 mx-auto sm:px-0 ">
+        <div
+          className="overflow-hidden  rounded-md shadow-2xl shadow-black "
+          style={{
+            background:
+              "linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe)",
+          }}>
           <div className="px-4 py-6 sm:px-8 sm:py-7">
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900">

@@ -1,25 +1,26 @@
 import { Link } from "react-router-dom";
+import image from "../../assets/banner/login5.webp";
 
 const LogIn = () => {
   return (
     <section className="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
       <div className="absolute inset-0">
-        <img
-          className="object-cover w-full h-full"
-          src="https://img.freepik.com/free-photo/medicine-capsules-global-health-with-geometric-pattern-digital-remix_53876-126742.jpg?size=626&ext=jpg"
-          alt=""
-        />
+        <img className="object-cover w-full h-full" src={image} alt="" />
       </div>
       <div className="absolute inset-0 bg-gray-900/20"></div>
 
       <div className="relative max-w-lg px-4 mx-auto sm:px-0">
-        <div className="overflow-hidden bg-white rounded-md shadow-md">
+        <div
+          className="overflow-hidden rounded-md shadow-xl text-white"
+          style={{
+            backgroundImage: `url(
+                "https://img.freepik.com/free-photo/beautiful-night-sky-with-shiny-stars_53876-16414.jpg?size=626&ext=jpg"
+              )`,
+          }}>
           <div className="px-4 py-6 sm:px-8 sm:py-7">
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-gray-900">
-                Sign in to Doc House
-              </h2>
-              <p className="mt-2 text-base text-gray-600">
+              <h2 className="text-3xl font-bold ">Sign in to Doc House</h2>
+              <p className="mt-2 text-base ">
                 Don’t have one?
                 <Link
                   to="/signup"
@@ -32,9 +33,7 @@ const LogIn = () => {
             <form action="#" method="POST" className="mt-8">
               <div className="space-y-5">
                 <div>
-                  <label className="text-base font-medium text-gray-900">
-                    Email address
-                  </label>
+                  <label className="text-base font-medium">Email address</label>
                   <div className="mt-2.5">
                     <input
                       type="email"
@@ -47,9 +46,7 @@ const LogIn = () => {
 
                 <div>
                   <div className="flex items-center justify-between">
-                    <label className="text-base font-medium text-gray-900">
-                      Password
-                    </label>
+                    <label className="text-base font-medium ">Password</label>
 
                     <a
                       href="#"
@@ -71,7 +68,7 @@ const LogIn = () => {
                 <div>
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700">
+                    className="inline-flex items-center justify-center w-full px-4 py-4 mt-5 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700 ">
                     Log in
                   </button>
                 </div>
