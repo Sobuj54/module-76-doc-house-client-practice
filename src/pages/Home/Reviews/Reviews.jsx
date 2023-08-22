@@ -2,7 +2,7 @@ import Slider from "../../../components/Slider/Slider";
 
 const Reviews = () => {
   return (
-    <div className="w-11/12 mx-auto my-20">
+    <div className="w-11/12 mx-auto mt-28 mb-16">
       <div className="text-center">
         <h2 className="text-3xl md:text-4xl font-bold">
           What Our Patients Says
