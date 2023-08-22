@@ -14,7 +14,7 @@ const NavBar = () => {
         <Link>Appointment</Link>
       </li>
       <li className="hover:bg-white rounded-lg">
-        <Link>Login</Link>
+        <Link to="/login">Login</Link>
       </li>
     </>
   );
