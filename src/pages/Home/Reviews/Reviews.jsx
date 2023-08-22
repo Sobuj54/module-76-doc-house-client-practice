@@ -1,3 +1,5 @@
+import Slider from "../../../components/Slider/Slider";
+
 const Reviews = () => {
   return (
     <div className="w-11/12 mx-auto  my-10">
@@ -9,6 +11,9 @@ const Reviews = () => {
           ab illo inve ntore veritatis et quasi architecto beatae vitae dicta
           sunt explicabo.
         </p>
+      </div>
+      <div>
+        <Slider></Slider>
       </div>
     </div>
   );
