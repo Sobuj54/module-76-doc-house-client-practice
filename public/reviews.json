@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "picture": "https://img.freepik.com/free-photo/stylish-black-girl_1157-15553.jpg?size=626&ext=jpg",
+      "name": "Alice Johnson",
+      "profession": "Graphic Designer",
+      "comment": "Alice is a creative graphic designer who brings imagination to life through her designs. Her attention to detail and artistic flair make her work truly exceptional."
+    },
+    {
+      "id": 2,
+      "picture": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg",
+      "name": "Michael Smith",
+      "profession": "Marketing Manager",
+      "comment": "Michael is an experienced marketing manager who excels at developing strategic campaigns. His analytical mindset and leadership skills make him a valuable asset to any marketing team."
+    },
+    {
+      "id": 3,
+      "picture": "https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg?size=626&ext=jpg",
+      "name": "Emily Williams",
+      "profession": "Physician",
+      "comment": "Dr. Emily is a compassionate physician who is dedicated to providing the best possible care to her patients. Her expertise and bedside manner make her highly respected among her colleagues and patients."
+    },
+    {
+      "id": 4,
+      "picture": "https://img.freepik.com/free-photo/handsome-curly-afro-american-guy-points-index-fingers-with-joy-smiles-pleasantly-being-good-mood-picks-you-his-merry-company-wears-white-t-shirt-models-yellow-wall_273609-31045.jpg?size=626&ext=jpg",
+      "name": "Daniel Brown",
+      "profession": "Architect",
+      "comment": "Daniel is a visionary architect who combines aesthetics with functionality in his designs. His innovative approach to spatial planning and sustainable architecture sets him apart in the field."
+    },
+    {
+      "id": 5,
+      "picture": "https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg?size=626&ext=jpg",
+      "name": "Olivia Martinez",
+      "profession": "Chef",
+      "comment": "Chef Olivia's culinary creations are a delightful fusion of flavors and textures. Her passion for experimenting with ingredients and techniques results in memorable dining experiences."
+    },
+    {
+      "id": 6,
+      "picture": "https://img.freepik.com/free-photo/man-isolated-showing-emotions-end-gestures_1303-30095.jpg?size=626&ext=jpg",
+      "name": "William Johnson",
+      "profession": "Data Scientist",
+      "comment": "William is a data scientist who thrives on extracting insights from complex datasets. His coding skills and statistical knowledge contribute to data-driven decision-making in various industries."
+    },
+    {
+      "id": 7,
+      "picture": "https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?size=626&ext=jpg",
+      "name": "Sophia Lee",
+      "profession": "Author",
+      "comment": "Sophia's words have the power to transport readers to different worlds. Her storytelling ability and vivid imagination make her novels a source of joy and inspiration for countless readers."
+    },
+    {
+      "id": 8,
+      "picture": "https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg",
+      "name": "Ethan Wilson",
+      "profession": "Fitness Trainer",
+      "comment": "Ethan is a fitness enthusiast who guides his clients towards healthier lives. His personalized training programs and motivational coaching help people achieve their fitness goals."
+    },
+    {
+      "id": 9,
+      "picture": "https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?size=626&ext=jpg",
+      "name": "Ava Garcia",
+      "profession": "Environmental Activist",
+      "comment": "Ava is a dedicated environmental activist who tirelessly advocates for sustainable practices. Her passion for preserving the planet inspires communities to take action for a greener future."
+    },
+    {
+      "id": 10,
+      "picture": "https://img.freepik.com/free-photo/african-american-student-walking-street-talking-phone_1303-12696.jpg?size=626&ext=jpg",
+      "name": "Liam Taylor",
+      "profession": "Musician",
+      "comment": "Liam is a talented musician who uses melodies to express emotions. His soulful compositions and mastery of multiple instruments create harmonies that resonate with listeners around the world."
+    }
+  ]
+  
