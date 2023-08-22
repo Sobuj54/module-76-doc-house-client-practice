@@ -9,9 +9,14 @@ const Slider = () => {
   const [sliderRef] = useKeenSlider({
     loop: true,
     mode: "free",
+    breakpoints: {
+      "(max-width: 600px)": {
+        slides: { perView: 1, spacing: 5 },
+      },
+    },
     slides: {
       perView: 3,
-      spacing: 15,
+      spacing: 10,
     },
   });
 
@@ -22,7 +27,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div ref={sliderRef} className="keen-slider">
+    <div ref={sliderRef} className="keen-slider mt-10">
       {reviews.map((review) => (
         <SliderDetails key={review.id} review={review}></SliderDetails>
       ))}
