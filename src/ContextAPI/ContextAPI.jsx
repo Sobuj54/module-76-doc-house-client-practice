@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  updateProfile,
 } from "firebase/auth";
 
 export const AuthContext = createContext();
@@ -19,6 +20,12 @@ const ContextAPI = ({ children }) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
+  const updateUser = (currentUser, name) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+    });
+  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -28,7 +35,7 @@ const ContextAPI = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  const userInfo = { user, loading, signUp };
+  const userInfo = { user, loading, signUp, updateUser };
 
   return (
     <AuthContext.Provider value={userInfo}>{children}</AuthContext.Provider>

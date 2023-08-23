@@ -5,15 +5,19 @@ import { useContext } from "react";
 import { AuthContext } from "../../ContextAPI/ContextAPI";
 
 const SignUp = () => {
-  const { signUp } = useContext(AuthContext);
+  const { signUp, updateUser } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
 
   const onSubmit = (data) => {
+    // create new user
     signUp(data.email, data.password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // update user profile
+        updateUser(user, data.name)
+          .then(() => {})
+          .catch((error) => console.log(error));
         navigate("/");
       })
       .catch((error) => console.log(error));
