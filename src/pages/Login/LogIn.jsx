@@ -1,12 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import image from "../../assets/banner/login5.webp";
 import { useForm } from "react-hook-form";
+import { useContext } from "react";
+import { AuthContext } from "../../ContextAPI/ContextAPI";
 
 const LogIn = () => {
+  const { signIn } = useContext(AuthContext);
+  const navigate = useNavigate();
+
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
+    // sign in with email and password
+    signIn(data.email, data.password)
+      .then((result) => {
+        const user = result.user;
+        // console.log(user);
+        navigate("/");
+      })
+      .catch((error) => console.log(error));
   };
 
   return (
