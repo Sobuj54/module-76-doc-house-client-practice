@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../ContextAPI/ContextAPI";
 
 const LogIn = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn, googleLogIn } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const { register, handleSubmit } = useForm();
@@ -17,6 +17,16 @@ const LogIn = () => {
       .then((result) => {
         const user = result.user;
         // console.log(user);
+        navigate("/");
+      })
+      .catch((error) => console.log(error));
+  };
+
+  const handleGoogleLogIn = () => {
+    googleLogIn()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
         navigate("/");
       })
       .catch((error) => console.log(error));
@@ -97,6 +107,7 @@ const LogIn = () => {
 
                 <div>
                   <button
+                    onClick={handleGoogleLogIn}
                     type="button"
                     className="
                                   relative
@@ -114,7 +125,7 @@ const LogIn = () => {
                                   bg-white
                                   border-2 border-gray-200
                                   rounded-md
-                                  hover:bg-gray-100
+                                  hover:bg-teal-300
                                   focus:bg-gray-100
                                   hover:text-black
                                   focus:text-black focus:outline-none
