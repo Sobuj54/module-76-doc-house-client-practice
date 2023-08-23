@@ -3,6 +3,7 @@ import image from "../../assets/banner/login5.webp";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "../../ContextAPI/ContextAPI";
+import { Helmet } from "react-helmet-async";
 
 const LogIn = () => {
   const { signIn, googleLogIn } = useContext(AuthContext);
@@ -34,6 +35,9 @@ const LogIn = () => {
 
   return (
     <section className="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
+      <Helmet>
+        <title>Doc House | Login</title>
+      </Helmet>
       <div className="absolute inset-0">
         <img className="object-cover w-full h-full" src={image} alt="" />
       </div>

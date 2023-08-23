@@ -3,6 +3,7 @@ import image from "../../assets/banner/0704df01-5673-4583-b02f-d21225569803_0_0.
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "../../ContextAPI/ContextAPI";
+import { Helmet } from "react-helmet-async";
 
 const SignUp = () => {
   const { signUp, updateUser, googleLogIn } = useContext(AuthContext);
@@ -35,6 +36,9 @@ const SignUp = () => {
 
   return (
     <section className="relative py-10 sm:py-16 lg:py-24">
+      <Helmet>
+        <title>Doc House | Sign up</title>
+      </Helmet>
       <div className="absolute inset-0">
         <img className="object-cover w-full h-full" src={image} alt="medical" />
       </div>
