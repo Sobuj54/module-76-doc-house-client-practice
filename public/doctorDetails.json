@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Jennifer Smith",
+      "specialty": "Dentistry",
+      "education": "DDS, University of Pennsylvania School of Dental Medicine",
+      "experience_years": 10,
+      "contact": {
+        "email": "jennifer.smith@example.com",
+        "phone": "+1 (555) 111-2222"
+      },
+      "rating": 4.8,
+      "work": "Smith Dental Clinic",
+      "awards": [
+        {
+          "name": "Best Dentist 2020",
+          "description": "Awarded for consistent excellence in patient care and dental treatments."
+        },
+        {
+          "name": "Excellence in Oral Care Award",
+          "description": "Recognized for outstanding contributions to the field of oral health."
+        }
+      ],
+      "services": ["Teeth Cleaning", "Fillings", "Dental Implants", "Teeth Whitening"],
+      "image_url": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg",
+      "location": "123 Main Street, Cityville",
+      "about": "Dr. Jennifer Smith is a passionate dentist with a decade of experience in providing top-quality oral care. She believes in creating a comfortable and friendly environment for her patients, ensuring their dental experiences are as pleasant as possible. Dr. Smith's dedication to continuous learning keeps her updated with the latest advancements in dentistry. Her commitment to excellence has earned her recognition as one of the best dentists in the field.",
+      "available_times": [
+        "Monday: 9 AM - 5 PM",
+        "Wednesday: 10 AM - 6 PM",
+        "Friday: 8 AM - 4 PM"
+      ],
+      "fee": "$150 per consultation"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Robert Davis",
+      "specialty": "Orthodontics",
+      "education": "DMD, Columbia University College of Dental Medicine",
+      "experience_years": 8,
+      "contact": {
+        "email": "robert.davis@example.com",
+        "phone": "+1 (555) 333-4444"
+      },
+      "rating": 4.6,
+      "work": "Davis OrthoCare",
+      "awards": [
+        {
+          "name": "Outstanding Orthodontist 2019",
+          "description": "Recognized for exceptional achievements in the field of orthodontics."
+        },
+        {
+          "name": "Innovator in Braces Technology",
+          "description": "Acknowledged for pioneering advancements in braces technology."
+        }
+      ],
+      "services": ["Braces", "Invisalign", "Retainers"],
+      "image_url": "https://img.freepik.com/free-photo/medical-workers-covid-19-vaccination-concept-confident-professional-doctor-female-nurse-blue-scrubs-stethoscope-show-thumbs-up-assure-guarantee-best-quality-service-clinic_1258-57360.jpg?size=626&ext=jpg",
+      "location": "456 Oak Avenue, Townsville",
+      "about": "Dr. Robert Davis is a skilled orthodontist known for his expertise in creating beautiful smiles. With a strong background in dental medicine, he has helped numerous patients achieve improved dental health and self-confidence through his orthodontic treatments. Dr. Davis is committed to delivering the highest standard of care and staying at the forefront of orthodontic advancements.",
+      "available_times": [
+        "Tuesday: 10 AM - 7 PM",
+        "Thursday: 9 AM - 6 PM",
+        "Saturday: 9 AM - 1 PM"
+      ],
+      "fee": "$200 per consultation"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Emily Nguyen",
+      "specialty": "Pediatric Dentistry",
+      "education": "DDS, University of California, San Francisco School of Dentistry",
+      "experience_years": 6,
+      "contact": {
+        "email": "emily.nguyen@example.com",
+        "phone": "+1 (555) 555-6666"
+      },
+      "rating": 4.9,
+      "work": "Happy Teeth Pediatrics",
+      "awards": [
+        {
+          "name": "Top Pediatric Dentist 2021",
+          "description": "Recognized for exceptional dedication to pediatric dental care."
+        },
+        {
+          "name": "Caring for Young Smiles Award",
+          "description": "Awarded for providing compassionate and effective dental care to children."
+        }
+      ],
+      "services": ["Children's Dental Exams", "Fluoride Treatment", "Pulpotomy"],
+      "image_url": "https://img.freepik.com/free-photo/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini_1258-88108.jpg?size=626&ext=jpg",
+      "location": "789 Pine Street, Villagetown",
+      "about": "Dr. Emily Nguyen is a dedicated pediatric dentist who is passionate about creating positive dental experiences for children. With a gentle and friendly approach, she helps children develop healthy oral hygiene habits that last a lifetime. Dr. Nguyen's expertise in pediatric dentistry and her warm personality make her a favorite among young patients and their parents.",
+      "available_times": [
+        "Monday: 8 AM - 4 PM",
+        "Wednesday: 9 AM - 5 PM",
+        "Friday: 10 AM - 6 PM"
+      ],
+      "fee": "$100 per consultation"
+    }
+  ]
+  

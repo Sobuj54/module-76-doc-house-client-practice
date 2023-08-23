@@ -4,8 +4,18 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ExpertDocs = () => {
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(() => {
+    fetch("doctorDetails.json")
+      .then((res) => res.json())
+      .then((data) => setDoctors(data));
+  }, []);
+
   return (
     <section className="py-10 bg-white sm:py-16 lg:pb-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -22,96 +32,44 @@ const ExpertDocs = () => {
         </div>
 
         <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-8 gap-y-12">
-          <div className="border-2 p-4 rounded-md">
-            <a href="#" title="" className="block aspect-w-4 aspect-h-3">
-              <img
-                className="object-cover w-full h-full rounded-md"
-                src="https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg"
-                alt=""
-              />
-            </a>
-            <h4 className="text-xl font-semibold mt-3 px-2">Karyen Anderson</h4>
-            <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-rose-500 bg-rose-100 mt-4">
-              BTP - Senior Physiotherapist
-            </span>
-            <p className="mt-6 ">
-              <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
-              <span className="ml-3">Dhanmondi, Dhaka, Bangladesh</span>
-            </p>
-            <p className="mt-4 text-gray-600">
-              <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>
-              <span className="ml-3">Available on Mon, 22 December</span>
-            </p>
-            <p className="mt-4 text-gray-600">
-              <FontAwesomeIcon icon={faDollarSign}></FontAwesomeIcon>
-              <span className="ml-3">$15</span>
-            </p>
-            <div className="text-center">
-              <button className="btn btn-outline border-orange-500 btn-warning mt-7 w-full">
-                View Profile
-              </button>
+          {doctors.map((doctor) => (
+            <div key={doctor.id} className="border-2 p-4 rounded-md">
+              <div className="block aspect-w-4 aspect-h-3">
+                <img
+                  className="object-cover w-full h-full rounded-md"
+                  src={doctor.image_url}
+                  alt="doctor"
+                />
+              </div>
+              <h4 className="text-xl font-semibold mt-3 px-2">{doctor.name}</h4>
+              <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-4">
+                {doctor.specialty}
+              </span>
+              <p className="mt-6 ">
+                <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
+                <span className="ml-5">{doctor.location}</span>
+              </p>
+              <div className="mt-4 text-teal-600 flex items-center ">
+                <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>
+                <ul className="ml-5">
+                  {doctor.available_times.map((list, index) => (
+                    <li key={index}>{list}</li>
+                  ))}
+                </ul>
+              </div>
+              <p className="mt-4 text-gray-600">
+                <FontAwesomeIcon icon={faDollarSign}></FontAwesomeIcon>
+                <span className="ml-5">{doctor.fee}</span>
+              </p>
+              <div className="text-center">
+                <Link
+                  to="/details"
+                  className="btn btn-outline border-orange-500 btn-warning mt-7 w-full">
+                  View Profile
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="border-2 p-4 rounded-md">
-            <a href="#" title="" className="block aspect-w-4 aspect-h-3">
-              <img
-                className="object-cover w-full h-full rounded-md"
-                src="https://img.freepik.com/free-photo/medical-workers-covid-19-vaccination-concept-confident-professional-doctor-female-nurse-blue-scrubs-stethoscope-show-thumbs-up-assure-guarantee-best-quality-service-clinic_1258-57360.jpg?size=626&ext=jpg"
-                alt=""
-              />
-            </a>
-            <h4 className="text-xl font-semibold mt-3 px-2">Emma Watson</h4>
-            <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-4">
-              BTP - Senior Physiotherapist
-            </span>
-            <p className="mt-6 ">
-              <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
-              <span className="ml-3">Dhanmondi, Dhaka, Bangladesh</span>
-            </p>
-            <p className="mt-4 text-gray-600">
-              <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>
-              <span className="ml-3">Available on Mon, 22 December</span>
-            </p>
-            <p className="mt-4 text-gray-600">
-              <FontAwesomeIcon icon={faDollarSign}></FontAwesomeIcon>
-              <span className="ml-3">$15</span>
-            </p>
-            <div className="text-center">
-              <button className="btn btn-outline border-orange-500 btn-warning mt-7 w-full">
-                View Profile
-              </button>
-            </div>
-          </div>
-          <div className="border-2 p-4 rounded-md">
-            <a href="#" title="" className="block aspect-w-4 aspect-h-3">
-              <img
-                className="object-cover w-full h-full rounded-md"
-                src="https://img.freepik.com/free-photo/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini_1258-88108.jpg?size=626&ext=jpg"
-                alt=""
-              />
-            </a>
-            <h4 className="text-xl font-semibold mt-3 px-2">Anne Hathaway</h4>
-            <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-teal-500 bg-teal-100 mt-4">
-              BTP - Senior Physiotherapist
-            </span>
-            <p className="mt-6 ">
-              <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
-              <span className="ml-3">Dhanmondi, Dhaka, Bangladesh</span>
-            </p>
-            <p className="mt-4 text-gray-600">
-              <FontAwesomeIcon icon={faCalendar}></FontAwesomeIcon>
-              <span className="ml-3">Available on Mon, 22 December</span>
-            </p>
-            <p className="mt-4 text-gray-600">
-              <FontAwesomeIcon icon={faDollarSign}></FontAwesomeIcon>
-              <span className="ml-3">$15</span>
-            </p>
-            <div className="text-center">
-              <button className="btn btn-outline border-orange-500 btn-warning mt-7 w-full">
-                View Profile
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
