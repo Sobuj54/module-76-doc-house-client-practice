@@ -32,6 +32,7 @@ const ExpertDocs = () => {
         </div>
 
         <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-8 gap-y-12">
+          {/* loaded data dynamically */}
           {doctors.map((doctor) => (
             <div key={doctor.id} className="border-2 p-4 rounded-md">
               <div className="block aspect-w-4 aspect-h-3">
@@ -45,7 +46,7 @@ const ExpertDocs = () => {
               <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-sky-500 bg-sky-100 mt-4">
                 {doctor.specialty}
               </span>
-              <p className="mt-6 ">
+              <p className="mt-6 text-lime-600">
                 <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
                 <span className="ml-5">{doctor.location}</span>
               </p>
@@ -57,13 +58,13 @@ const ExpertDocs = () => {
                   ))}
                 </ul>
               </div>
-              <p className="mt-4 text-gray-600">
+              <p className="mt-4 text-emerald-600">
                 <FontAwesomeIcon icon={faDollarSign}></FontAwesomeIcon>
                 <span className="ml-5">{doctor.fee}</span>
               </p>
               <div className="text-center">
                 <Link
-                  to="/details"
+                  to={`/details/${doctor.id}`}
                   className="btn btn-outline border-orange-500 btn-warning mt-7 w-full">
                   View Profile
                 </Link>

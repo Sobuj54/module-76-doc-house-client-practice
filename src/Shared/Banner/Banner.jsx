@@ -26,19 +26,19 @@ const Banner = () => {
         </div>
 
         <div className="relative my-10 lg:mt-0">
-          <div className="w-[150px] lg:w-[300px] absolute top-1/2 right-24 border-8  border-white hover:rotate-12 transition-transform delay-150">
+          <div className="w-[170px] lg:w-[300px] absolute top-2/3 right-10 border-8  border-white hover:rotate-12 transition-transform delay-150">
             <img
               src="https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg"
               alt=""
             />
           </div>
-          <div className="w-[150px] lg:w-[300px] absolute top-1/3 border-8 border-white hover:rotate-6 transition-transform delay-150">
+          <div className="w-[170px] lg:w-[300px] absolute top-14 right-38 border-8 border-white hover:rotate-6 transition-transform delay-150">
             <img
               src="https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?size=626&ext=jpg"
               alt=""
             />
           </div>
-          <div className="w-[150px] lg:w-[300px] absolute top-20 right-24 border-8 border-white hover:rotate-12 transition-transform delay-150">
+          <div className="w-[170px] lg:w-[300px] absolute top-32 right-10 border-8 border-white hover:rotate-12 transition-transform delay-150">
             <img
               src="https://img.freepik.com/free-photo/woman-doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg?size=626&ext=jpg"
               alt=""
