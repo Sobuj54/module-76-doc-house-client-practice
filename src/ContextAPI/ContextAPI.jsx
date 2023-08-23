@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  signOut,
   updateProfile,
 } from "firebase/auth";
 
@@ -35,7 +36,12 @@ const ContextAPI = ({ children }) => {
     return () => unsubscribe();
   }, []);
 
-  const userInfo = { user, loading, signUp, updateUser };
+  const logOut = () => {
+    setLoading(false);
+    return signOut(auth);
+  };
+
+  const userInfo = { user, loading, signUp, updateUser, logOut };
 
   return (
     <AuthContext.Provider value={userInfo}>{children}</AuthContext.Provider>

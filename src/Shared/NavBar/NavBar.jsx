@@ -1,6 +1,16 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../ContextAPI/ContextAPI";
 
 const NavBar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => console.log("successfully logged out."))
+      .catch((error) => console.log(error));
+  };
+
   const navItems = (
     <>
       <li className="hover:bg-white rounded-lg">
@@ -13,9 +23,17 @@ const NavBar = () => {
       <li className="hover:bg-white  rounded-lg">
         <Link>Appointment</Link>
       </li>
-      <li className="hover:bg-white rounded-lg">
-        <Link to="/login">Login</Link>
-      </li>
+      {user ? (
+        <li className="hover:bg-white rounded-lg">
+          <Link onClick={handleLogOut} to="/login">
+            Logout
+          </Link>
+        </li>
+      ) : (
+        <li className="hover:bg-white rounded-lg">
+          <Link to="/login">Login</Link>
+        </li>
+      )}
     </>
   );
 

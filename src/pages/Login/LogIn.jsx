@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
 import image from "../../assets/banner/login5.webp";
+import { useForm } from "react-hook-form";
 
 const LogIn = () => {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <section className="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
       <div className="absolute inset-0">
@@ -30,14 +37,15 @@ const LogIn = () => {
               </p>
             </div>
 
-            <form action="#" method="POST" className="mt-8">
+            <form onSubmit={handleSubmit(onSubmit)} className="mt-8">
               <div className="space-y-5">
                 <div>
                   <label className="text-base font-medium">Email address</label>
                   <div className="mt-2.5">
                     <input
                       type="email"
-                      name=""
+                      {...register("email")}
+                      required
                       placeholder="Enter email to get started"
                       className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                     />
@@ -58,7 +66,8 @@ const LogIn = () => {
                   <div className="mt-2.5">
                     <input
                       type="password"
-                      name=""
+                      {...register("password")}
+                      required
                       placeholder="Enter your password"
                       className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                     />
