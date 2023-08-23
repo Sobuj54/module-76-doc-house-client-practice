@@ -14,9 +14,9 @@ const Reviews = () => {
           sunt explicabo.
         </p>
       </div>
-      <div>
+      <>
         <Slider></Slider>
-      </div>
+      </>
     </div>
   );
 };
