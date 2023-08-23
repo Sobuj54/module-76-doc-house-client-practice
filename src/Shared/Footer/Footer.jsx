@@ -273,7 +273,7 @@ const Footer = () => {
             </div>
 
             <p className="mt-6 text-sm text-blue-200 lg:mt-0">
-              © Copyright 2021, All Rights Reserved by Postcraft
+              © Copyright 2021, All Rights Reserved by GreenCorp.
             </p>
           </div>
         </div>

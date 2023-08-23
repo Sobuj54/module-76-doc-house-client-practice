@@ -9,7 +9,7 @@ const SignUp = () => {
       </div>
       <div className="absolute inset-0 "></div>
 
-      <div className="relative max-w-lg px-4 mx-auto sm:px-0 ">
+      <div className="relative max-w-lg px-4 mx-auto sm:px-0">
         <div
           className="overflow-hidden  rounded-md shadow-2xl shadow-black "
           style={{

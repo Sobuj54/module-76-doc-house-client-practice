@@ -13,10 +13,13 @@ const Slider = () => {
       "(max-width: 600px)": {
         slides: { perView: 1, spacing: 5 },
       },
-    },
-    slides: {
-      perView: 3,
-      spacing: 10,
+      "(min-width: 980px)": {
+        slides: { perView: 3, spacing: 10 },
+      },
+      slides: {
+        perView: 2,
+        spacing: 7,
+      },
     },
   });
 
