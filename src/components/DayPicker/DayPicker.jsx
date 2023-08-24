@@ -14,8 +14,8 @@ function OnlyFutureRow(props) {
   return createElement(Row, props);
 }
 
-const DatePicker = () => {
-  const [selectedDay, setSelectedDay] = useState(null);
+const DatePicker = ({ selectedDay, setSelectedDay }) => {
+  //   const [selectedDay, setSelectedDay] = useState(null);
   //   console.log(selectedDay);
   //output will be:   Sun Aug 20 2023 00:00:00 GMT+0600
 
@@ -46,7 +46,7 @@ const DatePicker = () => {
         </div>
         <div>
           <img
-            className="rounded-md max-w-lg"
+            className="rounded-md  md:max-w-lg shadow-lg shadow-slate-500"
             src="https://img.freepik.com/free-photo/empty-modern-teethcare-stomatology-hospital-office-with-nobody-it-equipped-with-dental-intruments-ready-orthodontist-healthcare-treatment-tooth-radiography-images-display_482257-9418.jpg?size=626&ext=jpg"
             alt="equipment"
           />
