@@ -11,7 +11,7 @@ const ExpertDocs = () => {
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/doctors")
+    fetch("https://doc-house-server-five.vercel.app/doctors")
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, []);

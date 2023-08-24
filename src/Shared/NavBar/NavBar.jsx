@@ -21,7 +21,7 @@ const NavBar = () => {
         <Link>About</Link>
       </li>
       <li className="hover:bg-white  rounded-lg">
-        <Link>Appointment</Link>
+        <Link to="/appointment">Appointment</Link>
       </li>
       {user ? (
         <li className="hover:bg-white rounded-lg">

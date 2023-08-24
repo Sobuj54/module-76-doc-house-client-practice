@@ -5,6 +5,7 @@ import LogIn from "../pages/Login/LogIn";
 import SignUp from "../pages/SignUp/SignUp";
 import ErrorPage from "../pages/Error/ErrorPage";
 import DoctorDetails from "../pages/DoctorDetails/DoctorDetails";
+import Appointment from "../pages/Appointment/Appointment/Appointment";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,13 @@ const router = createBrowserRouter([
         path: "details/:id",
         element: <DoctorDetails></DoctorDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/doctors/${params.id}`),
+          fetch(
+            `https://doc-house-server-five.vercel.app/doctors/${params.id}`
+          ),
+      },
+      {
+        path: "appointment",
+        element: <Appointment></Appointment>,
       },
     ],
     errorElement: <ErrorPage></ErrorPage>,

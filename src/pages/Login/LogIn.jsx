@@ -34,14 +34,14 @@ const LogIn = () => {
   };
 
   return (
-    <section className="relative py-10 bg-gray-900 sm:py-16 lg:py-24">
+    <section className="relative py-16 sm:py-16 lg:py-24">
       <Helmet>
         <title>Doc House | Login</title>
       </Helmet>
       <div className="absolute inset-0">
         <img className="object-cover w-full h-full" src={image} alt="" />
       </div>
-      <div className="absolute inset-0 bg-gray-900/20"></div>
+      <div className="absolute inset-0 "></div>
 
       <div className="relative max-w-lg px-4 mx-auto sm:px-0">
         <div
