@@ -1,4 +1,3 @@
-import banner1 from "../../assets/banner/banner1.avif";
 import banner2 from "../../assets/banner/banner2.avif";
 
 const Banner = () => {

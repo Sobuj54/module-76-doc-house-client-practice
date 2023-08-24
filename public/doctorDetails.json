@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      
       "name": "Dr. Jennifer Smith",
       "specialty": "Dentistry",
       "education": "DDS, University of Pennsylvania School of Dental Medicine",
@@ -33,7 +33,7 @@
       "fee": "$150 per consultation"
     },
     {
-      "id": 2,
+      
       "name": "Dr. Robert Davis",
       "specialty": "Orthodontics",
       "education": "DMD, Columbia University College of Dental Medicine",
@@ -66,7 +66,7 @@
       "fee": "$200 per consultation"
     },
     {
-      "id": 3,
+      
       "name": "Dr. Emily Nguyen",
       "specialty": "Pediatric Dentistry",
       "education": "DDS, University of California, San Francisco School of Dentistry",

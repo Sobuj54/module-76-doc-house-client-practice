@@ -11,7 +11,7 @@ const ExpertDocs = () => {
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
-    fetch("doctorDetails.json")
+    fetch("http://localhost:5000/doctors")
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, []);
@@ -34,7 +34,7 @@ const ExpertDocs = () => {
         <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-8 gap-y-12">
           {/* loaded data dynamically */}
           {doctors.map((doctor) => (
-            <div key={doctor.id} className="border-2 p-4 rounded-md">
+            <div key={doctor._id} className="border-2 p-4 rounded-md">
               <div className="block aspect-w-4 aspect-h-3">
                 <img
                   className="object-cover w-full h-full rounded-md"
@@ -64,7 +64,7 @@ const ExpertDocs = () => {
               </p>
               <div className="text-center">
                 <Link
-                  to={`/details/${doctor.id}`}
+                  to={`/details/${doctor._id}`}
                   className="btn btn-outline border-orange-500 btn-warning mt-7 w-full">
                   View Profile
                 </Link>

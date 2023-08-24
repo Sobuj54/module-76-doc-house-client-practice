@@ -26,6 +26,8 @@ const router = createBrowserRouter([
       {
         path: "details/:id",
         element: <DoctorDetails></DoctorDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/doctors/${params.id}`),
       },
     ],
     errorElement: <ErrorPage></ErrorPage>,
