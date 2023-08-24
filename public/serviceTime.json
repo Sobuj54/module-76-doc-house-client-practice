@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "title": "Teeth Cleaning",
+      "description": "A thorough cleaning of teeth to remove plaque, tartar, and stains.",
+      "price": "$100",
+      "image": "https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/external-teeth-cleaning-dental-icongeek26-outline-colour-icongeek26.png",
+      "time_slots": [
+        "Monday 10:00 AM",
+        "Wednesday 02:00 PM",
+        "Thursday 11:00 AM",
+        "Saturday 09:00 AM"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dental Exam",
+      "description": "Comprehensive examination of oral health, including X-rays and assessment of cavities.",
+      "price": "$80",
+      "image": "https://img.icons8.com/nolan/64/smiling-mouth.png",
+      "time_slots": [
+        "Monday 11:00 AM",
+        "Tuesday 03:00 PM",
+        "Thursday 09:00 AM"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Fillings",
+      "description": "Treatment for cavities, involves removing decayed material and filling the tooth.",
+      "price": "$150 - $300",
+      "image": "https://img.icons8.com/arcade/64/dental-filling.png",
+      "time_slots": [
+        "Tuesday 10:00 AM",
+        "Wednesday 01:00 PM",
+        "Thursday 02:00 PM",
+        "Saturday 11:00 AM"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Teeth Whitening",
+      "description": "A cosmetic procedure to lighten teeth and remove discoloration or stains.",
+      "price": "$200",
+      "image": "https://img.icons8.com/3d-fluency/94/tooth.png",
+      "time_slots": [
+        "Monday 02:00 PM",
+        "Wednesday 03:00 PM",
+        "Thursday 01:00 PM"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Root Canal",
+      "description": "Removal of infected pulp from a tooth's canal, often followed by a crown.",
+      "price": "$800 - $1200",
+      "image": "https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/external-root-canal-dental-victoruler-linear-colour-victoruler.png",
+      "time_slots": [
+        "Tuesday 12:00 PM",
+        "Wednesday 11:00 AM",
+        "Friday 10:00 AM"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Dental Crown",
+      "description": "A cap placed over a damaged tooth to restore its shape, size, and strength.",
+      "price": "$700 - $1000",
+      "image": "https://img.icons8.com/arcade/64/dental-crown.png",
+      "time_slots": [
+        "Tuesday 09:00 AM",
+        "Wednesday 10:00 AM",
+        "Friday 01:00 PM",
+        "Saturday 02:00 PM"
+      ]
+    }
+  ]
+  

@@ -16,7 +16,7 @@ function OnlyFutureRow(props) {
 
 const DatePicker = () => {
   const [selectedDay, setSelectedDay] = useState(null);
-  console.log(selectedDay);
+  //   console.log(selectedDay);
   //output will be:   Sun Aug 20 2023 00:00:00 GMT+0600
 
   const footer = selectedDay ? (
