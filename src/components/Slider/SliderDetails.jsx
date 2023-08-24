@@ -6,7 +6,11 @@ const SliderDetails = ({ review, index }) => {
     <div
       className={`keen-slider__slide number-slide${
         index + 1
-      } border-2 rounded-md p-3`}>
+      } border-2 rounded-md p-3`}
+      style={{
+        minWidth: "405.526px",
+        maxWidth: "405.526px",
+      }}>
       <div className="flex  items-center">
         <img className="w-16 mask mask-circle" src={picture}></img>
         <div className="ml-2">
