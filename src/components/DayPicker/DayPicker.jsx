@@ -30,7 +30,7 @@ const DatePicker = ({ selectedDay, setSelectedDay }) => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content w-screen flex-col-reverse py-10 lg:flex-row gap-10 lg:gap-16">
         <DayPicker
-          className="bg-white p-4 rounded-md shadow-lg w-11/12 mx-auto"
+          className="bg-white p-4 rounded-md shadow-lg"
           mode="single"
           selected={selectedDay}
           onSelect={setSelectedDay}
@@ -41,13 +41,11 @@ const DatePicker = ({ selectedDay, setSelectedDay }) => {
           showOutsideDays
         />
 
-        <div className="w-11/12 mx-auto">
-          <img
-            className="rounded-md md:max-w-lg shadow-lg shadow-slate-500"
-            src="https://img.freepik.com/free-photo/empty-modern-teethcare-stomatology-hospital-office-with-nobody-it-equipped-with-dental-intruments-ready-orthodontist-healthcare-treatment-tooth-radiography-images-display_482257-9418.jpg?size=626&ext=jpg"
-            alt="equipment"
-          />
-        </div>
+        <img
+          className="rounded-md md:max-w-lg shadow-lg shadow-slate-500"
+          src="https://img.freepik.com/free-photo/empty-modern-teethcare-stomatology-hospital-office-with-nobody-it-equipped-with-dental-intruments-ready-orthodontist-healthcare-treatment-tooth-radiography-images-display_482257-9418.jpg?size=626&ext=jpg"
+          alt="equipment"
+        />
       </div>
     </div>
   );

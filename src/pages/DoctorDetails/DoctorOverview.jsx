@@ -8,15 +8,17 @@ const DoctorOverview = ({ doctorDetails }) => {
     awards,
     available_times,
     contact,
+    name,
   } = doctorDetails;
 
   return (
     <div className="w-11/12 mx-auto my-20">
       {/* about me */}
-      <div className="mb-10">
-        <h3 className="text-2xl font-bold">About Me </h3>
+      <div className="mb-7">
+        <h3 className="text-2xl font-bold">About {name} </h3>
         <p className="my-5">{about}</p>
       </div>
+      <div className="divider mb-7"></div>
       {/* education and awards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-0">
         {/* education column */}
