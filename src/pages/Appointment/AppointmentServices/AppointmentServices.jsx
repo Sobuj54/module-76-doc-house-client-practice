@@ -2,7 +2,7 @@ const AppointmentServices = ({ service, setAvailableServices }) => {
   const { title, image, _id } = service;
 
   const handleAppointment = (id) => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://doc-house-server-five.vercel.app/services/${id}`)
       .then((res) => res.json())
       .then((data) => setAvailableServices(data));
   };

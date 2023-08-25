@@ -28,9 +28,9 @@ const DatePicker = ({ selectedDay, setSelectedDay }) => {
 
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row gap-16">
+      <div className="hero-content w-screen flex-col-reverse py-10 lg:flex-row gap-10 lg:gap-16">
         <DayPicker
-          className="bg-white p-4 rounded-md shadow-lg"
+          className="bg-white p-4 rounded-md shadow-lg w-11/12 mx-auto"
           mode="single"
           selected={selectedDay}
           onSelect={setSelectedDay}
@@ -41,9 +41,9 @@ const DatePicker = ({ selectedDay, setSelectedDay }) => {
           showOutsideDays
         />
 
-        <div>
+        <div className="w-11/12 mx-auto">
           <img
-            className="rounded-md w-full md:max-w-lg shadow-lg shadow-slate-500"
+            className="rounded-md md:max-w-lg shadow-lg shadow-slate-500"
             src="https://img.freepik.com/free-photo/empty-modern-teethcare-stomatology-hospital-office-with-nobody-it-equipped-with-dental-intruments-ready-orthodontist-healthcare-treatment-tooth-radiography-images-display_482257-9418.jpg?size=626&ext=jpg"
             alt="equipment"
           />

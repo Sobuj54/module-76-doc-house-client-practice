@@ -2,6 +2,7 @@ import comma from "../../assets/logo/icons8-quote-left-96.png";
 
 const SliderDetails = ({ review, index }) => {
   const { picture, name, profession, comment } = review;
+
   return (
     <div
       className={`keen-slider__slide number-slide${
@@ -10,6 +11,7 @@ const SliderDetails = ({ review, index }) => {
       style={{
         minWidth: "405.526px",
         maxWidth: "405.526px",
+        transform: `translate3d(${index * 10}px, 0px, 0px )`,
       }}>
       <div className="flex  items-center">
         <img className="w-16 mask mask-circle" src={picture}></img>
